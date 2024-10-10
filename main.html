@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Renewable Energy Calculator</title>
+  <style>
+    label {
+      display: inline-block;
+      width: 150px;
+      text-align: right;
+      margin: 10px;
+    }
+    input {
+      width: 200px;
+      padding: 5px;
+      margin: 10px;
+    }
+    button {
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #energyOutput {
+      margin: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Renewable Energy Calculator</h1>
+  <label for="panelEfficiency">Panel Efficiency (%):</label>
+  <input type="number" id="panelEfficiency">
+  <br>
+  <label for="panelArea">Panel Area (m<sup>2</sup>):</label>
+  <input type="number" id="panelArea">
+  <br>
+  <label for="sunHours">Sun Hours (per day):</label>
+  <input type="number" id="sunHours">
+  <br>
+  <button onclick="calculateEnergy()">Calculate</button>
+  <p id="energyOutput"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
